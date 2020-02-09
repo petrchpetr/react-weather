@@ -10,7 +10,7 @@ export default class Weather extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=Prague&appid=f45e7c857dd14279ce01c3c1cceea8cf`)
+    axios.get('http://api.openweathermap.org/data/2.5/weather?q=Prague&appid='+process.env.REACT_APP_WEATHER_APIKEY)
       .then(res => {
         const weather = res.data;
         this.setState({ weather });
