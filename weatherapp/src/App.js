@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import axios from 'axios';
 import Weather from './Weather';
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          xEdit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -20,10 +19,10 @@ function App() {
         >
           Learn React, but how?
         </a>
+        <div>
+        <Weather/>
+        </div>
       </header>
-      <div>
-      <Weather/>
-      </div>
     </div>
   );
 }
