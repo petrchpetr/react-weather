@@ -6,6 +6,10 @@ create-react-app frontend
 
 
 docker build ./
+
+Now to run your React app through docker in dev mode enter the below command in terminal from the app’s directory:
+
+
 pwd
 docker run -it -p 3000:3000 -v [put your path here]/frontend/src:/frontend/src [image id]
 
